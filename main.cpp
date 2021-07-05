@@ -97,14 +97,14 @@ int main() {
 int main() {
 	int layer_value = 3, input_value = 2;
 	int mini_batch_test_case = 100;
-	int epoch = 1000;
+	int epoch = 5000;
 
 	string state_file_name = "C:\\VSproject\\NeuralNetwork\\stateData\\simple.osd";
 
 	auto r = XorShifts::XorShift128();
 	r.SetSeed(time(nullptr));
 
-	NeuralNetwork nn(mini_batch_test_case, layer_value, input_value, 2, 2, 1);
+	NeuralNetwork nn(mini_batch_test_case, layer_value, input_value, 3, 3, 1);
 	//NeuralNetwork nn;
 	//nn.LoadState(state_file_name);
 

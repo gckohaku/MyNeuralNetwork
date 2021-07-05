@@ -6,12 +6,9 @@
 #include <vector>
 #include <algorithm>
 #include <fstream>
-#include "Node.h"
-#include "Edge.h"
 #include "Matrix.h"
 #include "XorShift128.h"
 using namespace std;
-using namespace NNet;
 using namespace MyMath;
 
 namespace NNet {
@@ -50,7 +47,6 @@ namespace NNet {
 		Matrix Activation(string funcName, Matrix m);
 		Matrix dActivation(string funcName, Matrix m);
 
-		void CheckError(vector<double> va, vector<Node> vn);
 		void ReducingError(Matrix in);
 		// ‘æ 0 ‘w‚Ö‚Ì“ü—Í
 		void InputToNode(vector<double> iv);

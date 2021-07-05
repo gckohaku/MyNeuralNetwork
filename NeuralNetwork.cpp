@@ -110,11 +110,6 @@ Matrix NNet::NeuralNetwork::dActivation(string funcName, Matrix m)
 	return m;
 }
 
-void NNet::NeuralNetwork::CheckError(vector<double> va, vector<Node> vn)
-{
-	
-}
-
 void NNet::NeuralNetwork::InputToNode(vector<double> iv)
 {
 	
